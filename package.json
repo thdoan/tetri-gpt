@@ -1,0 +1,15 @@
+{
+  "name": "tetri-gpt",
+  "type": "module",
+  "scripts": {
+    "build": "rollup -c \"rollup_config.js\"",
+    "watch": "rollup -c \"rollup_config.js\" -w"
+  },
+  "devDependencies": {
+    "@rollup/plugin-terser": "^0.4.0",
+    "clean-css": "^5.3.2",
+    "rollup": "^3.10.1",
+    "rollup-plugin-copy": "^3.4.0",
+    "rollup-plugin-search-and-replace": "^1.0.1"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "env": {
+    "browser": true,
+    "es2017": true
+  },
+  "extends": "eslint:recommended",
+  "ignorePatterns": ["**/*.min.js"],
+  "overrides": [
+    {
+      "files": [
+        "**/app.js"
+      ],
+      "parserOptions": {
+        "sourceType": "module"
+      }
+    }
+  ],
+  "rules": {
+    "arrow-spacing": ["error"],
+    "comma-dangle": ["error", {
+      "arrays": "never",
+      "exports": "always-multiline",
+      "functions": "never",
+      "imports": "always-multiline",
+      "objects": "always-multiline"
+    }],
+    "key-spacing": ["error"],
+    "keyword-spacing": ["error"],
+    "no-console": ["error", {
+      "allow": ["error", "warn"]
+    }],
+    "no-tabs": ["error"],
+    "quotes": ["error", "single"],
+    "semi": ["error"],
+    "space-before-blocks": ["error"],
+    "space-infix-ops": ["error"]
+  }
+}
